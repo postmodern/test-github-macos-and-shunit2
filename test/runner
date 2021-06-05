@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+error=0
+
+for test in ${0%/*}/*_test.sh; do
+	$SHELL "$test" || error=1
+done
+
+exit "$error"
