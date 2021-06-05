@@ -3,7 +3,9 @@
 error=0
 
 for test in ${0%/*}/*_test.sh; do
+	echo ">>> Running $test ..."
 	$SHELL "$test" || error=1
+	echo ">>> Finished $test ..."
 done
 
 exit "$error"
