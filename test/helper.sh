@@ -4,9 +4,3 @@
 setUp() { return; }
 tearDown() { return; }
 oneTimeTearDown() { return; }
-
-echo -e "PWD:\t$PWD"
-echo -e "HOME:\t$HOME"
-echo -e "PATH:\t$PATH"
-echo -e "SHELL:\t$SHELL"
-echo
